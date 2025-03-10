@@ -115,7 +115,3 @@ de error se renderiza debajo de los inputs.
 ## Herramientas y tecnologías:
 
 React, React router dom, React hook form, Yup.
-
-## Dominio:
-
-https://aroundnat.jumpingcrab.com
