@@ -49,7 +49,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "http://localhost:3000",
+  baseUrl: "https://api.libreriamistral.jumpingcrab.com",
   headers: {
     "Content-Type": "application/json",
   },

@@ -31,7 +31,6 @@ function CartProvider({ children }) {
             ? { ...item, quantity: item.quantity + product.quantity }
             : item;
         });
-        console.log(result);
         return result;
       }
       const newCart = [...state, product];
@@ -49,7 +48,6 @@ function CartProvider({ children }) {
           ? { ...item, quantity: item.quantity + 1 }
           : item;
       });
-      console.log(result);
       return result;
     });
     // localStorage.setItem("addQuantity", productCount + 1);
@@ -70,7 +68,6 @@ function CartProvider({ children }) {
           ? { ...item, quantity: item.quantity - 1 }
           : item;
       });
-      console.log(result);
       return result;
     });
     // localStorage.setItem("removeQuantity", productCount - 1);
@@ -93,8 +90,6 @@ function CartProvider({ children }) {
     setProductCount(0);
     setTotalPrice(0);
   }
-
-  console.log("productos en el carrito", cart);
 
   const contextValue = {
     cart,

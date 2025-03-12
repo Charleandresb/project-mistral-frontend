@@ -21,8 +21,6 @@ function Cart() {
     navigate("/página-en-desarrollo");
   }
 
-  console.log("carrito", cart);
-
   const total = new Intl.NumberFormat("es-CL", {
     style: "currency",
     currency: "CLP",
@@ -103,80 +101,3 @@ function Cart() {
 }
 
 export default Cart;
-
-{
-  /* <section className="cart">
-<div className="cart__container">
-  <div className="cart__table">
-    <div className="cart__count">
-      <ShoppingCart className="cart__count-icon" />
-      <h5>Total de productos: {productCount}</h5>
-    </div>
-    <table className="cart__table-container">
-      <tbody>
-        <tr className="cart__border-table">
-          <td className="cart__product">
-            <b>Producto</b>
-          </td>
-          <td className="cart__name">
-            <b>Nombre</b>
-          </td>
-          <td className="cart__price">
-            <b>Precio</b>
-          </td>
-          <td className="cart__quantity">
-            <b>Cantidad</b>
-          </td>
-        </tr>
-        {cart.map((item) => {
-          return (
-            <tr key={item._id} className="cart__product-case">
-              <td>
-                <img src={item.photo} className="cart__image" alt="" />
-              </td>
-              <td>{item.name}</td>
-              <td>
-                {new Intl.NumberFormat("es-Cl", {
-                  style: "currency",
-                  currency: "CLP",
-                }).format(item.price)}
-              </td>
-              <td>{item.quantity}</td>
-              <td className="cart__button-container">
-                <button
-                  className="cart__remove-button"
-                  onClick={() => removeProductQuantity(item)}
-                >
-                  –
-                </button>
-                <button
-                  className="cart__add-button"
-                  onClick={() => addProductQuantity(item)}
-                >
-                  +
-                </button>
-                <button
-                  className="cart__empty-button"
-                  onClick={() => removeFromCart(item._id)}
-                >
-                  Eliminar del carrito
-                </button>
-              </td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
-  </div>
-  <div className="cart__total">
-    <h3>Total: {total}</h3>
-  </div>
-  <div className="cart__button-container">
-    <button className="cart__clear-button" onClick={() => clearCart()}>
-      Vaciar carrito
-    </button>
-    <button className="cart__pay-button">Pagar</button>
-  </div>
-</div>
-</section> */
-}

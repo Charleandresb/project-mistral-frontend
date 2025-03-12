@@ -1,4 +1,4 @@
-const MISTRAL_BACKEND = "http://localhost:3000";
+const MISTRAL_BACKEND = "https://api.libreriamistral.jumpingcrab.com";
 
 export async function register(email, password, name, lastname) {
   const response = await fetch(`${MISTRAL_BACKEND}/users/signup`, {

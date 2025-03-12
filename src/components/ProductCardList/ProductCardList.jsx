@@ -13,7 +13,6 @@ export default function ProductCardList(props) {
     async function getCards() {
       const response = await api.productCardList(productType);
       setCards(response);
-      console.log(response);
     }
 
     getCards();

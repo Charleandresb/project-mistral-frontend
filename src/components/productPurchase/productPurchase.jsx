@@ -15,21 +15,10 @@ export default function ProductPurchase() {
     async function getProduct() {
       const response = await api.selectedProduct(productCode);
       setProduct(response);
-      console.log(response);
     }
 
     getProduct();
   }, [productCode]);
-
-  // function handleProductCounterUp() {
-  //   setProductCounter(productCounter + 1);
-  // }
-
-  // function handleProductCounterDown() {
-  //   if (productCounter >= 2) {
-  //     setProductCounter(productCounter - 1);
-  //   }
-  // }
 
   function handleAddItem() {
     addToCart({ ...product, quantity: 1 });
@@ -56,21 +45,6 @@ export default function ProductPurchase() {
         <p className="product__code">{product.cod}</p>
         <p className="product__description">{product.description}</p>
         <p className="product__price">{price}</p>
-        {/* <div className="product__counter">
-          <button
-            className="product__button-left"
-            onClick={handleProductCounterDown}
-          >
-            -
-          </button>
-          <span className="product__counter-length">{productCounter}</span>
-          <button
-            className="product__button-right"
-            onClick={handleProductCounterUp}
-          >
-            +
-          </button>
-        </div> */}
         <button className="product__addButton" onClick={handleAddItem}>
           Agregar a la bolsa
         </button>
