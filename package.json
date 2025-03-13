@@ -7,7 +7,8 @@
     "dev": "vite --open",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && scp -r -i ./dist/* charleandresb@34.105.54.186:/home/charleandresb/frontend"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

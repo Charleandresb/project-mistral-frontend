@@ -114,4 +114,8 @@ de error se renderiza debajo de los inputs.
 
 ## Herramientas y tecnologías:
 
-React, React router dom, React hook form, Yup.
+React, Vite, React router dom, React hook form, Yup, Lucile React, Eslint.
+
+## Dominio:
+
+https://www.libreriamistral.jumpingcrab.com/
