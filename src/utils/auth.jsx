@@ -1,4 +1,4 @@
-const MISTRAL_BACKEND = "https://api.libreriamistral.jumpingcrab.com";
+const MISTRAL_BACKEND = import.meta.env.VITE_API_BASE_URL;
 
 export async function register(email, password, name, lastname) {
   const response = await fetch(`${MISTRAL_BACKEND}/users/signup`, {

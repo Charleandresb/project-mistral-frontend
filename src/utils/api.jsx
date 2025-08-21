@@ -49,7 +49,7 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: "https://api.libreriamistral.jumpingcrab.com",
+  baseUrl: import.meta.env.VITE_API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
   },
